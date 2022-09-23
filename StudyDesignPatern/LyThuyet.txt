@@ -1,0 +1,34 @@
+﻿1. Khái niệm
+-	Nếu có một class và muốn có một và chỉ một instance trong class
+đưa cho nó một quyền truy cập toàn cục
+
+Cách dùng: Login - Lưu lại lịch sử người dùng - cần một object log và
+chạy xuyên suốt
+-	Config file: Lưu vào biến singleton và sử dụng chung
+-	Catching về một file
+-	Trong một trận đấu luôn luôn bắt đầu bằng việc tung đồng xu
+cần một object chạy xuyên suốt
+
+Chú ý: 
+
+//Bai code ong dev
+Trong phần này mình sẽ tiến hành implement Singleton Design pattern và giải quyết vấn đề multi threading khi sử dụng Lazy initialization nhé.
+
+Tóm tắt:
+- Implement private static property
+- Implement private constructor
+- Implement public static getInstance method
+- Mình đã tiến hành cả 2 cách khởi tạo Singleton trong phần code bao gồm:
+    + Khởi tạo thẳng vào static property
+    + Khởi tạo khi gọi getInstance lần đầu tiên
+- Giải quyết vấn đề đa luồng khi khởi tạo ở lần gọi getInstance đầu tiên:
+    ** Vấn đề 1: Các thread chạy cùng lần để khởi tạo instance thì sẽ tạo ra nhiều instance thay vì một và chỉ một.
+    -- Cách giải quyết: sử dụng lock object( nếu dùng Java thì dùng từ khoá synchronized) thì sẽ khiến các thread khác chờ cho một thread chạy xong getInstance. Nhờ vậy sẽ không xảy ra việc bị khởi tạo nhiều instance.
+    ** Vấn đề 2: Performance sẽ giảm khi chúng ta đồng bộ hoá hàm getInstance vì tất cả các thread gọi lấy instance cùng lần đều phải chờ.
+    -- Cách giải quyết: Check null (để biết là có instance hay chưa), nếu chưa thì mới khoá hàm lại và khởi tạo, còn không thì return ra instance đã có. Nhờ vậy các thread sẽ không cần phải đợi nếu instance đã được khởi tạo.
+- Các vấn đề về đa luồng chỉ xảy ra khi chúng ta sử dụng cách khởi tạo ở lần gọi đầu tiên(lazy initialization).
+- Các bạn có thể tìm hiểu từ khoá VOLATILE: khi sử dụng thì hệ thống sẽ lọc ra giá trị mới nhất của biến để sử dụng(ứng dụng rất tốt khi làm việc đa luồng).
+
+//Doc
+- Có thể rút ngắn mã, có nhược điểm tiềm ẩn	
+
