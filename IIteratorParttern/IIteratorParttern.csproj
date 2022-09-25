@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Arts.cs" />
     <Compile Include="ArtsIterator.cs" />
+    <Compile Include="DemoFor\IntIterator.cs" />
+    <Compile Include="DemoFor\Iterator.cs" />
     <Compile Include="IIterator.cs" />
     <Compile Include="ISubjects.cs" />
     <Compile Include="Program.cs" />
