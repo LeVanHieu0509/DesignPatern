@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IIteratorParttern.DemoFor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,39 @@ namespace IIteratorParttern
             Console.WriteLine("\nArts subjects :");
             Print(iterator);
             Console.ReadLine();
+            DemoForLVM();
+        }
+        public static void DemoForLVM()
+        {
+            Console.WriteLine("Vui long nhap vao n:");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            LinkedList<int> listN = new LinkedList<int>();
+            for (int j = 1; j <= n; j++)
+            {
+                listN.AddLast(j);
+            }
+
+            //int i = 1;
+            //while (i <= n)
+            //{
+            //    if (i % 2 == 1)
+            //        Console.Write($"{i} ");
+            //    i++;
+            //}
+
+            IntIterator intIterator = new IntIterator(listN);
+
+            while (!intIterator.IsCollectionEnds())
+            {
+                int mIterator = intIterator.CurrentItem();
+                if (mIterator % 2 == 1)
+                    Console.Write($"{mIterator} ");
+                intIterator.Next();
+            }
+
+            intIterator.ForEachItem(Console.WriteLine);
         }
     }
+
 }
