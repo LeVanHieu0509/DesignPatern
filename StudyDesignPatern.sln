@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyDesignPatern", "StudyD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIteratorParttern", "IIteratorParttern\IIteratorParttern.csproj", "{D5BC0B9D-DB6C-4471-81C8-F498586921BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeParttern", "PrototypeParttern\PrototypeParttern.csproj", "{09A43D45-A78D-47C4-A63A-1BE03723B2F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyParttern", "ProxyParttern\ProxyParttern.csproj", "{C03E10E1-56DD-4E60-B0D6-2718D5EE1759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterParttern", "AdapterParttern\AdapterParttern.csproj", "{80CF7DDF-CA53-40D8-A389-A34D77802037}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1ECD874-FC3F-449C-8416-1D9273D153BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,18 @@ Global
 		{D5BC0B9D-DB6C-4471-81C8-F498586921BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5BC0B9D-DB6C-4471-81C8-F498586921BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5BC0B9D-DB6C-4471-81C8-F498586921BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09A43D45-A78D-47C4-A63A-1BE03723B2F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A43D45-A78D-47C4-A63A-1BE03723B2F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09A43D45-A78D-47C4-A63A-1BE03723B2F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09A43D45-A78D-47C4-A63A-1BE03723B2F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03E10E1-56DD-4E60-B0D6-2718D5EE1759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03E10E1-56DD-4E60-B0D6-2718D5EE1759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03E10E1-56DD-4E60-B0D6-2718D5EE1759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03E10E1-56DD-4E60-B0D6-2718D5EE1759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80CF7DDF-CA53-40D8-A389-A34D77802037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80CF7DDF-CA53-40D8-A389-A34D77802037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80CF7DDF-CA53-40D8-A389-A34D77802037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80CF7DDF-CA53-40D8-A389-A34D77802037}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
